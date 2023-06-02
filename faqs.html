@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="kklogo2.webp" alt="Logo">KK Devlopment</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Faq's</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="mx-2"><button class="btn btn-info" data-bs-toggle="modal"
+                data-bs-target="#loginmodal">Login</button> </div>
+        <div> <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signin">Signin</button></div>
+    </nav>
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to kkDevlopment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="mexampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="jexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--signin Modal -->
+    <div class="modal fade" id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Get KKdevlopment account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nexampleInputPassword1" class="form-label">Name</label>
+                            <input type="password" class="form-control" id="nexampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>How to buy designes?</h3>
+                    <p>Contact our group member to buy designes.</p>
+                </div>
+                <div class="col-lg-12">
+                    <h3>Payment methods?</h3>
+                    <p>we accept online payments like paypl,phonpe.</p>
+                </div>
+                <div class="col-lg-12">
+                    <h3>About contract?</h3>
+                    <p>only you need to accepet our policy. and make a contract.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <h2>Privacy policy</h2>
+                <div class="col-lg-12" id="sh">
+                    <h4>Information you give us</h4>
+                    <p>In order to send us your Request for Proposal (RFP), Request for Quote (RFQ), Request for
+                        Information
+                        (RFI)
+                        or
+                        any other project requirement inquiry or just to simply contact us using our contact us
+                        form/page, you
+                        will
+                        be
+                        asked for personal information, like your name, email address, messaging services handles
+                        (Skype, Google
+                        Hangout), telephone number, location etc. In case you are buying one of our ready-made product
+                        or
+                        service
+                        online
+                        from our website, we may ask you about your credit card information as well, which is securely
+                        processed
+                        and
+                        transferred, using high level encryption, to our 3rd party payment gateway processor partners
+                        (PayPal -
+                        https://www.paypal.com/in/webapps/mpp/ua/privacy-full) as we do not store any credit card
+                        details on our
+                        website
+                        or server(s).</p>
+
+                    <p>Information we get from your use of our services
+                        We may collect information about the services that you use and how you use them. This
+                        information
+                        includes:
+                    </p>
+
+                    <p> Log information
+                        When you use our services or view content, we may automatically collect and store certain
+                        information in
+                        server
+                        logs. This may include:</p>
+
+
+                    <p>Details of how you used our service, such as your search queries
+                        Internet protocol (IP) address
+                        Device event information such as browser type, browser language, the date and time of your
+                        request and
+                        referral
+                        URL
+                        Cookies that may uniquely identify your browser or session
+                        Cookies and anonymous identifiers
+                        We use various technologies to collect and store information when you visit a TRooTech service,
+                        and this
+                        may
+                        include sending one or more cookies or anonymous identifiers to your device.</p>
+                    <p> Third Party Platforms
+                        We may collect information about you when you interact (in the form of like, comment, follow,
+                        subscribe,
+                        tweet,
+                        message or any other similar actions) with us on any online social media networks such as
+                        Facebook,
+                        LinkedIn,
+                        Twitter, Google+, YouTube etc. where we maintain our official profiles. The information such as
+                        your
+                        social
+                        media profile ID, name and other related information publicly available on your social profile
+                        may be
+                        collected.</p>
+                    <p>
+                        Other Information
+                        Our sales and marketing teams may collect other publicly available information about you from
+                        online
+                        sources. We
+                        do this after you have primarily contacted us, either directly through one of our websites, apps
+                        or
+                        indirectly
+                        through one of our partner/affiliate channel, to supplement our background knowledge about you
+                        in order
+                        to
+                        provide you better solutions that would fit your overall needs.</p>
+                    <p> How we use the information that we collect
+                        We use the information that we collect for our internal review, tracking and for contact. The
+                        information is
+                        then archived in our server(s). We study the information that we collect to understand
+                        user/visitor
+                        trends
+                        in
+                        order to improve our services, content, website and products quality etc. and ultimately to
+                        improve user
+                        and
+                        customer experience. We use your email address, phone number(s), third party and other
+                        information to
+                        directly
+                        communicate with you. Our business development team uses this information to connect with you
+                        and
+                        discuss
+                        your
+                        business requirement in order to provide you with a relevant solution. Our marketing team uses
+                        this
+                        information
+                        to send you periodic promotional, non-promotional and other marketing related information and
+                        material
+                        that
+                        we
+                        think may be useful to you and could add value to your business.</p>
+                    <p>
+                        Payment Information
+                        Your confidential financial information including credit card details are not stored in any of
+                        our
+                        servers
+                        and
+                        are rather securely transfered to our payment partners, as mentioned above under 'Information
+                        you give
+                        us',
+                        to
+                        process the charge, except for your name, email, phone number and other relevant contact
+                        details. We use
+                        your
+                        contact details to send you invoice receipts, reminders and other related transactional emails.
+                    </p>
+
+                    <p>Your data is safe with us
+                        None of the information that we collect is sold to any 3rd party organization not part of the
+                        TRooTech
+                        group
+                        and/or sister concerns, subsidiaries. We may, however, share your information with our sister
+                        concerns,
+                        subsidiary companies and affiliates.</p>
+
+                    <h4> Sharing with third parties</h4>
+                    <p> We may share your personal information with third-party service providers (including but not
+                        limited to
+                        MailChimp https://mailchimp.com/legal/privacy/, HubSpot
+                        https://legal.hubspot.com/privacy-policy) to
+                        permit
+                        such
+                        parties to provide services that help us with our business activities, which may include
+                        assisting us
+                        with
+                        marketing, advertising our product/service offerings, business intelligence, or providing,
+                        maintaining
+                        and
+                        improving the features and functionality of the Offerings, among other things. For example, we
+                        may
+                        provide
+                        personal information to our service providers for direct emailing of our newsletters or
+                        notifications of
+                        our
+                        product/service offerings. The data shared can include name, job title, email address, company
+                        information,
+                        phone number. All third parties are engaged under contract and obliged to meet appropriate
+                        security
+                        requirements
+                        and comply with all applicable legislation.</p>
+                    <p> Your Rights and Choices
+                        Unsubscribe
+
+                        We may provide you with the opportunity to 'Unsubscribe' - the unsubscribe link can be found at
+                        the
+                        bottom
+                        of
+                        every promotional or marketing newsletter email that you receive from us. If you decide to
+                        opt-out, we
+                        may
+                        not
+                        be able to provide certain features of the Offerings to you.
+                    </p>
+                    <p> Opt-Out
+
+                        Unsubscribing immediately removes you from our marketing list(s), however an individual key
+                        contact from
+                        our
+                        sales, marketing and/or business development team may still connect with you. If you wish not to
+                        be
+                        contacted by
+                        any of our individual team members as well, please kindly reply to the individual with 'opt-out'
+                        in your
+                        email
+                        subject or body.</p>
+                    <p> Blocking Cookies
+
+                        You can remove or block certain cookies using the settings in your browser but the Offerings may
+                        cease
+                        to
+                        function properly if you do so.</p>
+
+                    <p>
+                        How We Respond to Do Not Track Signals
+
+                        Your Web browser may have a “do not track” setting which, when enabled, causes your browser to
+                        send a do
+                        not
+                        track HTTP header file or “signal” to each site you visit. At present, the Offerings do not
+                        respond to
+                        this
+                        type
+                        of signal.</p>
+                    <p>Data Subject Rights
+
+                        You can access, rectify, erase, restrict or export your personal information at any time by
+                        emailing us
+                        at
+                        legal@trootech.com. You can object to our processing of your personal information at any time.
+                        Contact
+                        our
+                        Data
+                        Protection Officer with requests or concerns at legal@trootech.com. If you are unsatisfied with
+                        the
+                        response
+                        you
+                        have the right to lodge a complaint with your supervisory authority.</p>
+                    <p> Accessing and Updating Your Personal Information
+                        When you use the Offerings, we make good faith efforts to provide you with access to your
+                        personal
+                        information
+                        upon your request and either provide you the means to correct this information if it is
+                        inaccurate or to
+                        delete
+                        such information at your request if it is not otherwise required to be retained by law or for
+                        legitimate
+                        business purposes. You may access, review, correct, update, change or delete your information at
+                        any
+                        time.
+                        To do
+                        so, please contact us at legal@trootech.com with your name and email ID and the information
+                        requested to
+                        be
+                        accessed, corrected or removed. If you are using the Service (any of our product demo), log in
+                        to your
+                        account,
+                        go to Your Account Settings, and make the desired changes. We may decline to process requests
+                        that are
+                        unreasonably repetitive or systematic, require disproportionate technical effort (for instance,
+                        requests
+                        concerning information residing on backup tapes), jeopardize the privacy of others, would be
+                        extremely
+                        impractical, or for which access is not otherwise required. In any case where we provide
+                        information
+                        access
+                        and
+                        correction, we perform this service free of charge, except if doing so would require a
+                        disproportionate
+                        effort.</p>
+                    <p>Please note that if you cease using the Service or we terminate your access to the Service in
+                        accordance
+                        with
+                        your Terms Of Website Use, you may no longer have the ability to access or request to update
+                        your
+                        information.</p>
+                    <p>We may retain your information as necessary to support the Offerings, comply with our legal
+                        obligations
+                        or
+                        resolve disputes. Note that content you post on our Offerings may remain on the Offerings even
+                        if you
+                        cease
+                        using the Offerings or we terminate your access to the Offerings.
+
+                        No Children Under Age 16
+                        The Offerings are not intended for use by anyone under the age of 16, nor does TRooTech
+                        knowingly
+                        collect or
+                        solicit personal information from anyone under the age of 16. If you are under 16, you may not
+                        attempt
+                        to
+                        register for the Offerings or send any information about yourself to us, including your name,
+                        address,
+                        telephone
+                        number, or email address. In the event that we confirm that we have collected personal
+                        information from
+                        someone
+                        under the age of 16 without verification of parental consent, we will delete that information
+                        promptly.
+                        If
+                        you
+                        are a parent or legal guardian of a child under 16 and believe that we might have any
+                        information from
+                        or
+                        about
+                        such child, please contact us at the email or mailing address provided at the end of this
+                        Privacy
+                        Policy.
+                    </p>
+
+                    <h4>Security</h4>
+                    <p> The security of your personal information is important to us. We maintain a variety of
+                        appropriate
+                        technical
+                        and
+                        organizational safeguards to protect your personal information. We limit access to personal
+                        information
+                        about
+                        you to employees who we believe reasonably need to come into contact with that information to
+                        provide
+                        products
+                        or services to you or in order to do their jobs. Further, we have implemented reasonable
+                        physical,
+                        electronic,
+                        and procedural safeguards designed to protect personal information about you. We encrypt certain
+                        confidential
+                        and sensitive information in transit using industry-standard encryption technology. Most of our
+                        websites
+                        are
+                        also secured using 128 bit SSL certificates. While we strive to use reasonable efforts to
+                        protect your
+                        personal
+                        information, we cannot guarantee its absolute security.</p>
+                    <p>
+                        Data Storage
+                        Location
+                        The host servers on which TRooTech processes and stores its databases are located in The United
+                        States
+                        of
+                        America. Our business development and marketing teams may use and process the information that
+                        is
+                        collected
+                        from
+                        our local servers and systems within our office premises or from official portal devices only in
+                        India
+                        and
+                        European Union.</p>
+                    <p>
+                        Data Breach
+                        TRooTech will inform you within 48 hours, to the extent we are legally authorised to do so, in
+                        case of
+                        any
+                        application or order originating from an administrative or judicial authority relating to your
+                        personal
+                        data
+                        and/or inn case of an unfortunate data breach or threat of such data breach that may compromise
+                        your
+                        perfonal
+                        information collected by us.
+                    </p>
+                    <p>
+
+                        Changes
+                        We may change part of or full privacy policy document without any prior consent or permission.
+                        You may
+                        please
+                        contact us using our standard contact form should you have any further queries or seek
+                        clarification
+                        regarding
+                        any of the privacy points and declaration mentioned above.</p>
+
+                    <p>For more detailes contact us</p>
+                </div>
+            </div>
+
+            <button class="btn btn-info" onclick="showhide()">Read more/less</button>
+
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              copyright &copy all rights reserved 2023-24.
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>>
+    <script src="script.js"></script>
+</body>
+
+</html>

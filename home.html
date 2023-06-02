@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="kklogo2.webp" alt="Logo">KK Devlopment</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faqs.html">Faq's</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="mx-2"><button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button> </div>
+    <div> <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signin">Signin</button></div>
+  </nav>
+
+  <!--login Modal -->
+<div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to kkDevlopment</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="wexampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="zexampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--signin Modal -->
+<div class="modal fade" id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Get KKdevlopment account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nexampleInputPassword1" class="form-label">Name</label>
+            <input type="password" class="form-control" id="nexampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+         
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid mt-4" id="Home">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="bg1.jpg" class="d-block w-100 img-thumbnail" alt="logo">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Welcome To KK Devlopment</h3>
+            <p>We Provide you Awesome websites here. Our website builder helps bring your unique vision to life—no
+              design or code experience required. Create a customizable, mobile-optimized website within the hour. All
+              you need to start is a domain name and a vision for your website. If you're building a small business
+              website, online store, or otherwise, Mailchimp can simplify the process.</p>
+              <a class="btn btn-primary" href="/contact.html">Place order></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bg22.avif" class="d-block w-100 img-fluid" alt="logo" id="imgg">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Web designes and Web devlopment</h3>
+            <p>We provide you Attractive design and also backend support. You only need to advice how you wanted your
+              website. Build and maintain websites: A back-end developer’s main responsibility is to use various tools,
+              frameworks, and languages to determine how best to develop intuitive, user-friendly prototypes and turn
+              them into websites. This requires an understanding of cross-platform functionality and compatibility.</p>
+              <a class="btn btn-primary" href="/contact.html">Place order></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img3.jpg" class="d-block w-100 img-fluid" alt="logo">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Pocket freindly</h3>
+            <p>You will get awesome websites in low price and best service aswell.</p>
+            <a class="btn btn-primary" href="/contact.html">Place order></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="i1.jpg" class="card-img-top" alt="logo">
+            <div class="card-body">
+              <h5 class="card-title">Backend support</h5>
+              <p class="card-text">take your business another level with tect. Everything is online now so why not your
+                business?</p>
+              <a href="/contact.html" class="btn btn-primary">make order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="t2.jpg" class="card-img-top" alt="logo">
+            <div class="card-body">
+              <h5 class="card-title">Responsive</h5>
+              <p class="card-text">Your website will look great in every screen.</p>
+              <a href="/contact.html" class="btn btn-primary">make order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="t3.jpg" class="card-img-top" alt="logo">
+            <div class="card-body">
+              <h5 class="card-title">Low price</h5>
+              <p class="card-text">You will get wevbsites in lowest price and highest framework.        
+              </p>
+              <a href="/contact.html" class="btn btn-primary">make order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          copyright &copy all rights reserved 2023-24.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>>
+  <script src="script.js"></script>
+</body>
+
+</html>

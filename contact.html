@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="kklogo2.webp" alt="Logo">KK Devlopment</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faqs.html">Faq's</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="mx-2"><button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button> </div>
+    <div> <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signin">Signin</button></div>
+  </nav>
+
+  <!--login Modal -->
+<div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to kkDevlopment</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--signin Modal -->
+<div class="modal fade" id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Get KKdevlopment account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nexampleInputPassword1" class="form-label">Name</label>
+              <input type="password" class="form-control" id="nexampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <h1 class="text-center">Contact us</h1>
+    <p>Fill the form and we will contact you</p>
+    <form>
+        <div class="mb-3">
+            <label for="nnxampleInputPassword1" class="form-label">name</label>
+            <input type="password" class="form-control" id="nnxampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="pnxampleInputPassword1" class="form-label">Phone</label>
+            <input type="password" class="form-control" id="pnxampleInputPassword1">
+          </div>
+          
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="eexampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="lexampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="cexampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+
+  <div class="container text-center mt-4">
+    <h1>My detailes</h1>
+    <p>name: Kartik pande</p>
+    <p>Email: kartikpande67@gmail.com</p>
+    <p>phone no: 7022852377</p>
+    <p>Post Add: Gulganjikoppa Dharwad 580008</p>
+    <p>karnataka India</p>
+  </div>
+
+
+
+  <div class="container-fluid mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          copyright &copy all rights reserved 2023-24.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>>
+  <script src="script.js"></script>
+</body>
+
+</html>
